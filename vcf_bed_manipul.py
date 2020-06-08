@@ -7,6 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/14k3gTpgao9XoKGW8fnRnJCA7xha-qLw6
 """
 import csv
+from tqdm import tqdm
+from pyliftover import LiftOver
+
 def find_chrom (fname):
     #Поискк окончания header в vcf file
     with open (fname, 'r') as check:
