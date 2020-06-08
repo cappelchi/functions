@@ -9,6 +9,7 @@ Original file is located at
 import csv
 from tqdm import tqdm
 from pyliftover import LiftOver
+import pandas as pd
 
 def find_chrom (fname):
     #Поискк окончания header в vcf file
