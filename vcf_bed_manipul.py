@@ -122,7 +122,7 @@ def recoord_vcf(input_name = '', output_name = '', snp_only = False):
                             cnt_crd += 1
                         else:
                             cnt_mis +=1
-                    else
+                    else:
                         cnt_tri +=1
                 if row[0] == '#CHROM':
                     writer.writerow(row)
