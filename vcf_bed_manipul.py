@@ -118,7 +118,7 @@ def recoord_vcf(input_name = '', output_name = '', snp_only = False):
                 writer = csv.writer(output_file, delimiter = '\t')
                 if trigger:
                     cnt += 1
-                    if (len(row[3]) == 1) & (len(row[4]) == 1) | (not(snp_only)):
+                    if ((len(row[3]) == 1) & (len(row[4]) == 1)) | ((row[3] == '.') & (row[4] == '.')) | (not(snp_only)):
                         rw = lo.convert_coordinate('chr' + str(row[0]), int(row[1]))
                         if rw:                   
                             row[1] = rw[0][1]
